@@ -3,12 +3,12 @@ require('./application')
 Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
-describe('the find and replace path', {:type => :feature}) do
-  it('searches a sentence for a specific word and replaces word') do
+describe('most common word count', {:type => :feature}) do
+  it('searches a sentence for most common word count') do
     visit('/')
     fill_in('sentence', :with => 'hello cat' )
     fill_in('word', :with => 'cat')
     click_button('Submit')
-    expect(page).to have_content(["cat", 1])
+    expect(page).to have_content(1)
   end
 end
