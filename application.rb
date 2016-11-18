@@ -8,6 +8,7 @@ get('/') do
 end
 
 get('/output') do
-  @sender = params.fetch('sender').word_count(params.fetch('sender'))
+  @sender = params.fetch('sender').word_count(params.fetch('word'))
+  @word = params.fetch('word')
   erb(:output)
 end
