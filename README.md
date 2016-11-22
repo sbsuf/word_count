@@ -11,11 +11,14 @@
 _{This is the website the users can find out most common words appeared in the string they provided in the website. }_
 
 ## Specifications
-_{It can display to the user the pizza size and toppings options to what kind of pizza they can order:}_
 * _Example Input string: I love dogs and dogs also loves me.
 * _Example Input word: dogs
 * _Example Output: 2
 
+## Installation
+* _Git Clone 
+* _Excute command bundle in project folder in terminal 
+* _Fire up the Sinatra server by excuting command ruby application.rb
 
 ## Support and contact details
 
